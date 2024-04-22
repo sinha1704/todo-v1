@@ -1,38 +1,89 @@
-.App {
+/* .page-link{
+  background-color: ;
+} */
+.body{
+padding: 0;
+margin: 0;
+background-color: rgb(243, 242, 245);
+}
+.heading{
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: blueviolet; 
+   font-style: oblique;
+    margin-top: 0px;
+}
+.card{
+  height: 100px;
+  width: 130px;
+  background-color: rgb(179, 169, 202);
+   margin-top: 16px;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 5px;
+   padding-right: 5px;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+    transition: width 2s, height 2s, transform 2s;
+
+}
+.card:hover{
+  width: 150px;
+  height: 120px;
+  transform: rotate(360deg);
+}
+.cardSection{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+
+}
+.cardId{
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cardTitle{
+  font-size: 10px;
+  font-weight: 500;
+  color: rgb(230, 217, 243);
+  text-align: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.paginationSection{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+   gap: 20px;
+    justify-content: center;
+     padding: 20px;
 }
-
-.App-link {
-  color: #61dafb;
+.labelItems{
+  font-size: 12px;
+  font-weight: 550;
+  color: darkorchid;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.pageBtn{
+  background-color: rgb(175, 133, 214);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+}
+.pageSizeDropdown{
+  background-color:blueviolet;
+  color: #fff;
+}
+@media only screen and (max-width: 800px) {
+  .cardSection{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+  
   }
-  to {
-    transform: rotate(360deg);
+}
+@media only screen and (max-width: 600px) {
+  .cardSection{
+    display: grid;
+    grid-template-columns: 50% 50%;
+  
   }
 }
